@@ -504,7 +504,7 @@ border-radius: 32px;
      font-size:60px;
 }
  a:hover {
-     background-color:white;
+     background-color:transparent;
 }
  a.tr:hover {
      background-color:transparent;
