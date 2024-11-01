@@ -271,23 +271,6 @@ certain designs and be pretty distracting in general.
 
 ## Social Networks
 
-### Facebook Open Graph data
-
-You can control the information that Facebook and others display when users
-share your site. Below are just the most basic data points you might need. For
-specific content types (including "website"), see [Facebook's built-in Open
-Graph content
-templates](https://developers.facebook.com/docs/opengraph/objects/builtin/).
-Take full advantage of Facebook's support for complex data and activity by
-following the [Open Graph
-tutorial](https://developers.facebook.com/docs/opengraph/tutorial/).
-
-```html
-<meta property="og:title" content="">
-<meta property="og:description" content="">
-<meta property="og:image" content="">
-```
-
 ### Twitter Cards
 
 Twitter provides a snippet specification that serves a similar purpose to Open
