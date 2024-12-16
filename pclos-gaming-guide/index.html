@@ -163,7 +163,7 @@
       <div class="noviheart">
       </div>
       <h2 class="mainboldtext" style="font-family:monospace; letter-spacing:-1px; opacity:1.0; line-height:30px;">
-         PCLOS Gaming Steam+MangoHud+FPS Cap guide<br>for PCLinuxOS - by zoey (Novimatrem)
+         PCLOS Gaming Steam+MangoHud+FPS Cap<br>guide for PCLinuxOS - by Novimatrem
       </h2>
       <p style="line-height:21px; font-family:monospace; letter-spacing:-1px; opacity:1.0;">
 <br>
@@ -213,10 +213,11 @@
 
   <h1 style="letter-spacing:-0px; font-size:28px;">Step 2: Installing MangoHud</h1>
       
-  <p>Comparatively, installing MangoHud is incredibly easy, all you need to do is navigate to its Releases page on GitHub (<a style="color:#0e63f8" href="https://github.com/flightlessmango/MangoHud/releases" target="_blank">https://github.com/flightlessmango/MangoHud/releases</a>), download the latest version (the download at the top, with the file ending with the extension tar.gz), locate that file, extract it, right click the background of that folder and click "Open in Terminal", and then type the following commands, in order:</p>
-  <pre style="color:#00ff00">      su
-      adduser $(whoami) sudo
-      ./mangohud-setup.sh install</pre>
+  <p>Comparatively, installing MangoHud is incredibly easy, all you need to do is navigate to its Releases page on GitHub (<a style="color:#0e63f8" href="https://github.com/flightlessmango/MangoHud/releases" target="_blank">https://github.com/flightlessmango/MangoHud/releases</a>), download the latest version (the download at the top, with the file ending with the extension tar.gz), locate that file, extract it, right click the background of that folder and click "Open Terminal Here", and then type the following commands, in order:</p>
+  <pre style="color:#00ff00"># Your user account needs to be in the sudoers file for this to work.
+# How to do so is outside of the scope of this guide, but is easy to Google for.
+
+      sudo ./mangohud-setup.sh install</pre>
   <p>
    and MangoHud is installed!</p>
 
