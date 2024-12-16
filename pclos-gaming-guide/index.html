@@ -170,7 +170,7 @@
          <br><p></p>
          <p>
          <br>
-         v13, Dec 16th 2024<br><span style="color:transparent">-</span><br>
+         v14, Dec 16th 2024<br><span style="color:transparent">-</span><br>
          
          This advanced guide goes over installing Steam and MangoHud on PCLinuxOS, and using it to cap/limit the FPS of Steam games. My graphics card gets quite hot, so this is essential for me.<br><span style="color:transparent">-</span>
       
@@ -203,7 +203,7 @@
       <p>KEEP READING, WE'RE NOT DONE YET! - Due to a side effect of the method used to install, your package manager will have just broken, don't worry! You just need to make a tiny config file edit to restore its functionality, type the following command:</p>
       <pre style="color:#00ff00">      nano /etc/apt/sources.list.d/steam-stable.list</pre>
       <p> - then move your cursor in front of the lines that say deb, and type a # in front of them both, to disable them, as demonstrated below:</p>
-      <pre style="color:#00ff00; letter-spacing:-1.2px; font-size:12.8px;">#deb [arch=amd64,i386 signed-by=/usr/share/keyrings/steam.gpg] https://repo.steampowered.com/steam/ stable steam
+      <pre style="color:#00ff00; letter-spacing:-1.2px; font-size:12px;">#deb [arch=amd64,i386 signed-by=/usr/share/keyrings/steam.gpg] https://repo.steampowered.com/steam/ stable steam
 #deb-src [arch=amd64,i386 signed-by=/usr/share/keyrings/steam.gpg] https://repo.steampowered.com/steam/ stable steam
          </pre>
       <p>Save-and-quit from this editor, press Ctrl-X (together), then press Y to agree to save, and Enter to agree to save it in the right place. Now, close the Terminal, and then open a new one, the next command will need to be written in this freshly opened non-root Terminal.</p>
@@ -215,7 +215,7 @@
       
   <p>Comparatively, installing MangoHud is incredibly easy, all you need to do is navigate to its Releases page on GitHub (<a style="color:#0e63f8" href="https://github.com/flightlessmango/MangoHud/releases" target="_blank">https://github.com/flightlessmango/MangoHud/releases</a>), download the latest version (the download at the top, with the file ending with the extension tar.gz), locate that file, extract it, right click the background of that folder and click "Open Terminal Here", and then type the following commands, in order:</p>
   <pre style="color:#00ff00"># Your user account needs to be in the sudoers file for this to work.
-# How to do so is outside of the scope of this guide, but is easy to Google for.
+# How to do so is outside the scope of this guide, but is easy to Google
 
       ./mangohud-setup.sh install</pre>
   <p>
