@@ -37,7 +37,7 @@ html,body {
      background-color:transparent;
      background-size: cover;
      text-align: left;
-     background: rgba(0, 0, 0, 1) url(./assets/2023wall.png) no-repeat center center fixed;
+     background: rgba(0, 0, 0, 1) url(./assets/2026wall.jpg) no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -51,7 +51,7 @@ html,body {
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
-     background: url(https://novimatrem.uk/assets/2023wall.png) no-repeat center center fixed; 
+     background: url(https://novimatrem.uk/assets/2026wall.jpg) no-repeat center center fixed; 
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -230,7 +230,6 @@ html,body {
  img.headerpfpTWO {
      width:auto;
      height:127px;
-     border-radius: 84px;
      float:left;
      padding: 0px;
      margin:5px;
@@ -274,6 +273,51 @@ html,body {
      max-height:64px;
      vertical-align:top;
      margin: 0 auto;
+}
+/* 1. Hide the checkbox logic */
+.penguin-state {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* 2. Setup the container */
+.penguin-display {
+    position: relative;
+    display: inline-block;
+    width: 64px; /* Set to your image width */
+    cursor: pointer;
+    user-select: none; /* Prevents text-selection blue boxes on double click */
+}
+
+/* 3. Image Styling */
+.p-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.0s ease-in-out;
+}
+
+.p-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/* 4. The Toggle Logic: When checked, swap images */
+.penguin-state:checked + .penguin-display .p-default {
+    opacity: 0;
+}
+
+.penguin-state:checked + .penguin-display .p-active {
+    opacity: 1;
+}
+
+/* Optional: Slight "squish" effect on click for feedback */
+.penguin-display:active {
+    transform: scale(0.95);
 }
  sub {
      line-height:10px;
